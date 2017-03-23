@@ -21,3 +21,5 @@ Icon=/usr/share/pixmaps/zoiper-48.png
 Terminal=false
 
 {% endhighlight %}
+
+Put this file in your home directory with Zoiper.desktop name
