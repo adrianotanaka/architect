@@ -5,7 +5,7 @@ categories:
 - posts
 ---
 
-Today i installed the Zoiper softphone in Fedora 25 (Cinnamon) but at the end, the desktop shortcut was not created.
+##Today I installed the Zoiper softphone in Fedora 25 (Cinnamon) but at the end, the desktop shortcut was not created.
 So, this is the .desktop file to create:
 
 {% highlight shell %}
