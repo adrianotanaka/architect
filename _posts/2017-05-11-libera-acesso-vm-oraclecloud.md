@@ -1,3 +1,11 @@
+---
+title: Liberando acesso a máquinas na nuvem Oracle.
+date: 2017-05-11 00:18:23 Z
+categories:
+- posts
+---
+
+
 # Liberando acesso a máquinas na nuvem Oracle.
 
 Para liberar o acesso em máquinas da nuvem Oracle, primeiro precisamos conhecer e entender 3 pontos base:
