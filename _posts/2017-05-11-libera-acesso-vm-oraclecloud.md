@@ -19,7 +19,7 @@ Nesse ponto, ainda não estamos liberando nenhum acesso, só estamos configurand
 Imagine uma caixa onde todos os itens dentro dela(no nosso caso VMs) compartilham as mesmas regras e tem livre acesso , é para isso que serve uma **Security List**, todas as VMs que façam parte da mesma Security List herdam e compartilham as mesmas regras, uma máquina pode participar de até 5 Security Lists.
 Essa imagem extraida do site da Oracle exemplifica muito bem isso:
 
-http://docs.oracle.com/cloud/latest/stcomputecs/STCSG/img/GUID-377E5D0A-90D5-4B98-8681-7D8B418D65A4-default.gif
+![](https://github.com/adrianotanaka/adrianotanaka.github.io/blob/master/assets/images/libera_acesso/seclist-1.png)
 
 As Vms Inst_1, Inst_2 e Inst_3 estão  "dentro" da Security List A que é parametrizada para não permitir conexões externas a essas máquinas, mas permitem que elas enviem comunicação para fora da Security List, entre essas máquinas, elas podem se comunicar pelo IP Privado em qualquer porta.
 
@@ -27,7 +27,7 @@ Uma Security Rule, é básicamente uma regra de firewall, já configuramos as po
 
 
 Indo em Network->Security Rules-> Create Security Rules, temos que entrar o nome da nossa regra(coloque um nome fácil), defina se ela vai estar habilitada ou não, escolha a aplicação que você deseja liberar(no nosso caso ssh) ou selecione all se vai liberar todas as portas(muito cuidado com isso!), em source, configure a origem da conexão, no nosso caso vamos selecionar Security IP List e colocar public-internet e destino como uma Security List.
-
+![](https://github.com/adrianotanaka/adrianotanaka.github.io/blob/master/assets/images/libera_acesso/seclist-2.png)
 Com essa configuração, todas as máquinas que façam parte da Security list selecionada vão ter o acesso liberado.
 
 
