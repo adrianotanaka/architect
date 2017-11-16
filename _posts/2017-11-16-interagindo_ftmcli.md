@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Interagindo com o Oracle Cloud Storage usando o ftmcli.
 date: 2017-11-16 00:18:23 Z
 categories:
