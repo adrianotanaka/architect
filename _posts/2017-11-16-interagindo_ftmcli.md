@@ -38,8 +38,11 @@ Configurando o arquivo de parâmetros
     max-threads=15
 
 Onde:
+
 user=serviço-DOMINIO\:usuario_com_permissão
+
 service=Nome do serviço
+
 auth-url=Endereço rest do seu storage
 
 Salvando a senha no arquivo de parâmetros
@@ -70,6 +73,7 @@ Enviando seu primeiro arquivo para o Storage
 Como a senha já foi salva no arquivo de parâmetros, basta executar o seguinte comando:
 
     java -jar ftmcli.jar upload -s -N  Arquivo.txt NOME_CONTAINER C:\Arquivo.txt
+    
 Onde **upload** indica a operação que desejamos fazer,  **-s**(minúsculo) indica que caso já exista um arquivo com o mesmo nome, ele não envie novamente, **-N** é o nome que o arquivo vai receber no storage, **NOME_CONTAINER** indica em qual container do storage o arquivo deve ser armazenado, caso ele não exista, vai ser criado automaticamente e por fim qual arquivo estamos enviando.
 
 Enviando todos os arquivos de um diretório
